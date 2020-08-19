@@ -1,0 +1,9 @@
+name: 'Artifact Webhook'
+description: 'Webhook to a given URL with github.repository'
+inputs:
+  webhook-url:
+    description: 'URL to send the request to'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
