@@ -4,6 +4,9 @@ inputs:
   webhook-url:
     description: 'URL to send the request to'
     required: true
+  secret:
+    description: 'Value to be sent as header to authenticate'
+    required: false
 runs:
   using: 'node12'
   main: 'dist/index.js'
